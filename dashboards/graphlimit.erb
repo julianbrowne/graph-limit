@@ -1,0 +1,24 @@
+<script type='text/javascript'>
+
+$(function() {
+
+  Dashing.widget_base_dimensions = [500, 500];
+  Dashing.numColumns = 1;
+
+});
+
+</script>
+
+
+<% content_for(:title) { "Limit Graph" } %>
+
+<div class="gridster">
+  <ul>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="load" data-view="GraphLimit" data-title="Server load" style="background-color:#47bbb3;"></div>
+    </li>
+
+  </ul>
+
+</div>

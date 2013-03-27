@@ -1,0 +1,84 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+
+$background-color:  #dc5945;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.3);
+$tick-color:        #FF0000;
+
+
+// ----------------------------------------------------------------------------
+// Widget-graph_limit styles
+// ----------------------------------------------------------------------------
+
+.widget-graph-limit {
+
+  background-color: $background-color;
+  position: relative;
+
+  h1.title {
+    color: #000000;
+  }
+
+  h2 {
+    color: #000000;
+  }
+
+  #limitpeak {
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 100;
+  }
+
+  #limitvalue {
+    width: 30px;
+  }
+
+  svg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .title, .value {
+    position: relative;
+    z-index: 99;
+  }
+
+  .title {
+    color: $title-color;
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  .x_tick {
+    position: absolute;
+    bottom: 0;
+    .title {
+      font-size: 20px;
+      color: $tick-color;
+      padding-bottom: 3px;
+    }
+  }
+
+  .y_ticks {
+    font-size: 20px;
+    fill: $tick-color;
+    fill-opacity: 1;
+  }
+
+  .domain {
+    display: none;
+  }
+
+}
